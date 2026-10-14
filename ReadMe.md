@@ -18,8 +18,8 @@ This project contains automated UI tests for the Kervan e-commerce website using
 
 ## Project Structure
 
-- `src/test/java/features`: Contains Cucumber feature files.
-- `src/test/java/stepdefinition`: Contains Java classes defining Cucumber steps.
+- `src/test/java/Features`: Contains Cucumber feature files.
+- `src/test/java/stepDefinition`: Contains Java classes defining Cucumber steps.
 
 ## How to Run
 
