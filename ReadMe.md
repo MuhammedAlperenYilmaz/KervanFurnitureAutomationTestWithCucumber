@@ -1,21 +1,20 @@
-# Kervan E-Commerce Automation Test With Cucumber
+# Kervan E-Commerce Automation Tests with Cucumber
 
-This project contains automation tests using Cucumber and Selenium for searching, selecting a product, adding it to cart, and verifying the cart functionality on the Kervan e-commerce site.
+This project contains automated UI tests for the Kervan e-commerce website using Selenium WebDriver and Cucumber. It covers essential e-commerce user flows, including product search, product selection, quantity updates, adding products to the cart, and verifying cart functionality.
 
-## Table of Contents
+## Technologies Used
 
-1. [Requirements](#requirements)
-2. [Project Structure](#project-structure)
-3. [How to Run](#how-to-run)
-4. [Scenario Descriptions](#scenario-descriptions)
-5. [Automation Tests with Cucumber](#automation-tests-with-cucumber)
-6. [Points to Note](#points-to-note)
+- **Java** – Programming language
+- **Selenium WebDriver** – Browser automation
+- **Cucumber** – BDD (Behavior-Driven Development) and Gherkin-based test scenarios
+- **Maven** – Dependency management and test execution
+- **WebDriverManager** – WebDriver management
 
-## Requirements
+## Prerequisites
 
 - Java 8 or higher
 - Maven
-- WebDriver (SafariDriver was used)
+- A compatible browser and WebDriver configuration
 
 ## Project Structure
 
@@ -24,29 +23,33 @@ This project contains automation tests using Cucumber and Selenium for searching
 
 ## How to Run
 
-1. Open a terminal in the project's root directory.
-2. Use the following command to run the tests:
+1. Clone or download the repository.
+2. Open a terminal in the project root directory.
+3. Ensure Java and Maven are installed and configured.
+4. Run the tests using the appropriate Maven command for the project configuration.
 
+## Test Scenarios
 
-## Scenario Descriptions
+The automated scenarios cover the following user flows:
 
-- **Go to homepage**: Navigate to the main page of the Kervan e-commerce site.
-- **Product is searched**: Search for a specific product.
-- **Product is selected**: Select a product from the search results.
-- **Product quantity is updated**: Update the quantity of the selected product.
-- **Add to cart**: Add the selected product to the cart.
-- **Go to cart**: Navigate to the cart to verify its contents.
-- **The browser is closed**: Close the browser after completing the tests.
+- **Navigate to Homepage:** Open the Kervan e-commerce website.
+- **Search for a Product:** Search for a specific product.
+- **Select a Product:** Select a product from the search results.
+- **Update Product Quantity:** Change the quantity of the selected product.
+- **Add Product to Cart:** Add the selected product to the shopping cart.
+- **Verify Cart Contents:** Navigate to the cart and check its contents.
+- **Close the Browser:** Close the browser after test execution.
 
-## Automation Tests with Cucumber
+## Test Approach
 
-This project is developed using Cucumber, allowing scenarios to be defined in Gherkin language. Cucumber enhances readability and strengthens the connection between scenarios and code.
+The project uses Cucumber to define test scenarios in Gherkin, making test cases easier to read and understand. Selenium WebDriver is used to automate browser interactions and execute the defined scenarios against the e-commerce website.
 
-## Points to Note
+## Notes
 
-- Browser selection and configuration (e.g., SafariDriver) may vary depending on your operating system and environment.
-- WebDriverManager is used to automatically manage the WebDriver driver. If you want to use a different browser or driver, you may need to switch to the appropriate version of WebDriverManager.
+- The project was developed using SafariDriver. Browser compatibility depends on the operating system and WebDriver configuration.
+- WebDriverManager is used to manage the browser driver.
+- Browser and driver configurations may need to be adjusted when running the tests in a different environment.
 
----
+## Purpose
 
-This automation test project is designed to test fundamental operations on the Kervan e-commerce site using Cucumber. If you have any questions or feedback, please feel free to contact us.
+This project demonstrates the application of BDD principles and UI test automation to common e-commerce workflows using Java, Selenium WebDriver, and Cucumber.
